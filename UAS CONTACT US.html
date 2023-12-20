@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design Css</title>
+        <style type="text/css">
+            body{
+                font-size: 16px;
+                font-weight: bold;
+                background-image: url(images/banner_aquarium.jpg);
+                background-size: 80% 80%;
+            }
+           #container{
+            color: fff;
+            width: 980px;
+            margin: auto;
+           }
+          #header{
+            height: 300px;
+            background-color:red ;
+            padding-top: 30px;
+            background-image: url(images/bannerhome.png);
+            background-size: 100% 100%;
+           }
+           #content{
+            height: 800px;
+            width: 100%;
+            background-color: black;
+            float: left;
+            color: black;
+           }
+           #content h1,h3{
+            color: black;
+            padding: 5px 15px 5px 15px;
+           }
+           #content p{
+           font-size: 15px;
+           text-align: justify;
+           padding: 0px 5px 0px 5px;
+           }
+           #footer{
+            height: 50px;
+            background-color: darkred;
+            clear: both;
+            text-align: center;
+            color: white;
+
+           }
+          #nav{
+          height: 30px;
+          background-color:skyblue ;
+           padding: 10px;
+           text-align: center;
+           font-size: 18px;
+           color: white;
+        }
+        #tombol{
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        /*Gaya saat mouse hover*/
+        .tombol:hover{
+            background-color: blueviolet;
+            color: whitesmoke;
+            text-shadow: darkred;
+            font color: white;
+        }
+        img{
+            width: 100%;
+        }
+        .gambar{
+            float: left;
+            margin: 10px;
+            width: 300px;
+            border: 1px solid red;
+        }
+        p{
+            text-align: center;
+            font-size: 12px;
+            color: rgb(0, 0, 0);
+        }
+        input[type=text], input[type=date],textarea,select{
+            width: 100%;
+            background-color: whitesmoke;
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+      
+        input[type=submit]{
+            background-color: whitesmoke;
+        }
+        #wrapper{
+            width: 500px;
+            margin: auto;
+            border: 1px solid red;
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: lightblue;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+    </head>
+    <body>
+    <div id="container">
+    <div id="header"></div>
+    <div id="nav">
+        <a href="UAS HOME.html">Home</a>
+        <a href="UAS ARTIKEL.html">Artikel</a>
+        <a href="UAS GALLERY.html">Gallery</a>
+        <a href="UAS CONTACT US.html">Contact Us</a>
+    </div>
+    <div id="content">
+        <div id="wrapper">
+            <h1>Contact us</h1>
+        <form>
+            Nama<input type="text" name="nama" placeholder="Masukan Nama">
+            Alamat<textarea name="alamat"></textarea>
+            Kota<select name="" id="">
+                <option value="">--pilih kota--</option>
+                <option value="">--pilih kota--</option>
+                <option value="">--pilih kota--</option>
+                <option value="">--pilih kota--</option>
+                <option value="">--pilih kota--</option>
+                <option value="">--pilih kota--</option>
+            </select>
+            Jenis Kelamain<input type="radio"name="gender">Laki-Laki
+                          <input type="radio"name="gender">Perempuan
+            <br>Tangggal Lahir<input type="date" name="tgl">
+            Hobi<input type="checkbox" name="Hobi">Membaca
+            <input type="checkbox" name="Hobi">Membaca
+            <input type="checkbox" name="Hobi">Membaca
+            <input type="checkbox" name="Hobi">Membaca
+
+            <br>
+            <input type="submit" name="submit" value="Simpan">
+        </form>
+    </div>
+    </div>
+    <div id="footer"><h1 > &copy; Copyright 2023 - Ahmad Fikri_231011701073 </h1></div>
+</div>
+    </body>
+</html>

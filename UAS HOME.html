@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design Css</title>
+        <style type="text/css">
+            body{
+                background-image: url(images/banner_aquarium.jpg);
+                background-size: 80% 100%;
+
+            }
+           #container{
+            color: fff;
+            width: 980px;
+            margin: auto;
+           }
+           #header{
+            height: 300px;
+            background-color:red ;
+            padding-top: 30px;
+            background-image: url(images/bannerhome.png);
+            background-size: 100% 100%;
+           }
+           #content{
+            height: 700px;
+            width: 20%;
+            background-color: black;
+            float: left;
+            color : white;
+           }
+           #content h1,h3{
+            color: white;
+            padding: 5px 15px 5px 15px;
+           }
+           #content p{
+           font-size: 15px;
+           text-align: justify;
+           padding: 0px 5px 0px 5px;
+           }
+           #sidebar{font-size: 20px;
+            height: 700px;
+            width: 80%;
+            background-color: black;
+            float: right;
+           }
+           #sidebar p {
+           font-size:18px ;
+           text-align: justify;
+           padding: 0px 5px 0px 5px;
+           }
+           #footer{
+            height: 50px;
+            background-color: darkred;
+            clear: both;
+            text-align: center;
+           }
+          #nav{
+          height: 30px;
+          background-color:skyblue ;
+           padding: 10px;
+           text-align: center;
+           font-size: 18px;
+           color: darkred;
+
+        }
+        #tombol{
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        /*Gaya saat mouse hover*/
+        .tombol:hover{
+            background-color: blueviolet;
+            color: whitesmoke;
+            text-shadow: darkred;
+            font color: white;
+        }
+        #time{
+            height: 200 px;
+            width: 950px;
+            background-color: black;
+            float: right;
+            color : white;
+            padding: 5px 15px 5px 15px;
+
+        }
+        img{
+            width: 180px;
+            height: 676px;
+            margin: 10px;
+        }
+        </style>
+    </head>
+    <body>
+    <div id="container">
+    <div id="header">
+    </div>
+    <div id="nav">
+        <a href="UAS HOME.html" class="tombol">Home</a>
+        <a href ="UAS ARTIKEL.html" class="tombol">Artikel</a>
+        <a href="UAS GALLERY.html" class="tombol">Gallery</a>
+        <a href="UAS CONTACT US.html" class="tombol">Contact Us</a>
+    </div>
+    <div id="content"><img src="images/sidebaruas.jpg">
+</div>
+    <div id="sidebar">
+        
+        <h1><font color="white">Ikan Hias</h1><p><font color="white">Ikan hias adalah jenis ikan baik yang berhabitat di air tawar maupun di laut yang dipelihara untuk memperindah taman atau ruang tamu. Panorama bawah laut sering kali dinilai menarik sehingga banyak orang yang rela menghabiskan banyak uang untuk menyelam dan menikmatinya. Kini, kemajuan teknologi memungkinkan orang menikmati panorama air laut di dalam ruangan. Kehadiran ikan hias di dalam rumah masyarakat modern dapat menjadi salah satu alternatif hiburan di tengah rutinitas yang padat.Ikan-ikan hias ini dipelihara untuk kesenangan, oleh karena itu bentuk, warna, ukuran, keserasian, dan kebiasaannya benar-benar harus diperhatikan. Hampir 75% pasokan ikan hias air tawar di dunia berasal dari Indonesia, dan sekurang-kurangnya 363 jenis ikan hias air tawar dari Indonesia telah diekspor ke berbagai negara di dunia.
+            </p>
+        <h2>Ikan Hias Air Tawar</h2><p>Ikan hias air tawar adalah jenis ikan hias yang habitatnya di air tawar. Pemeliharaan ikan hias air tawar biasanya di akuarium atau di kolam tergantung pada tujuan pemeliharaan. Ikan yang dipelihara untuk kesenangan, biasanya ditempatkan di akuarium sedangkan ikan yang dipelihara dengan tujuan mendapat keuntungan dari hasil budi daya biasanya ditempatkan di kolam. Jenis ikan yang dipelihara untuk kesenangan biasanya tergantung selera pemilik, namun ikan yang dipelihara untuk bisnis biasanya tergantung pada selera pasar dan harga. Salah satu pakan alami bagi ikan hias air tawar yang masih kecil adalah rotifera, yaitu organisme yang mudah ditemui di daerah perairan payau, tawar, maupun laut yang dalam keadaan normal berkembang biak secara partogenesis atau bertelur tanpa kawin.</p>
+    </div>
+    <div id="time">
+        <script type="text/javascript">
+        var waktu = new Date();
+        var jam = waktu.getHours();
+        var tgl = waktu.getDate();
+        var bln = waktu.getMonth();
+        var thn = waktu.getFullYear();
+        var hr = waktu.getDay();
+
+        var bulan = ["Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Ags", "Sep", "Okt", "Nov", "Desember"];
+        var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
+        // bulan[11];
+
+        document.write("Waktu sekarang : "+waktu+"<br>");
+        
+        document.write(tgl+"/"+(bln+1)+"/"+thn+"<br>");
+        if (jam<=10) {
+            document.write("Selamat Pagi");
+        } else if (jam<=14) {
+            document.write("Selamat Siang");
+        } else if (jam<=17) {
+            document.write("Selamat Sore");
+        }else {
+            document.write("Selamat Bobo");
+        }
+
+    </script>
+    </div>
+    <div id="footer"><h1>&copy; Copyright 2023 - Ahmad Fikri_231011701073</h1></div>
+</div>
+    </body>
+</html>
